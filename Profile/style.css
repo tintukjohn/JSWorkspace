@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./images/bg6.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: black; 
+    height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+
+#logo {
+color: white;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-flex;
+}
+.navigation{
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* display: flex; */
+    justify-content: space-between;
+
+}
+
+.navigation > a{
+    color: white;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-decoration: none;
+    border: 1px white solid;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.navigation > a:hover{
+    background-color: azure;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 1s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+}
+
+.leftside{
+    color: white;
+    padding: 108px 7px 32px 283px;
+}
+#btn{
+    background-color: skyblue;
+    width: 83%;
+}
+form{
+    width: 200px;
+    padding: 20px 20px;
+    background-color: beige;
+    border: 1px solid black;
+    float: right;
+    margin-top: -200px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+
+.table{
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-bottom: 150px;
+    color: white;
+}
+
+#photo{
+    width: 200px;
+}
+
+
+.data > h3{
+    text-align: center;
+    padding: 10px 0px 10px 10px;
+    color: blue;
+}
+.data > h4{
+    text-align: center;
+    padding: 10px 0px 10px 10px;
+}
+
+
+.clearfix{
+    border: 1px solid black;
+    border-color: aqua;
+    padding: 5px;
+    margin: 40px;
+    background-color: #e5e6ef
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#about{
+    color: black;
+    margin-top: 10px;
+}
+#about > img{
+    float: right;
+    margin-left: 20px;
+    width: 30%;
+}
+
+#skills{
+    color: black;
+    margin-top: 10px;
+}
+#skills > img{
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+}
+
+#education{
+    color: black;
+    margin-top: 10px;
+}
+#education > img{
+    float: right;
+    margin-left: 20px;
+    width: 50%;
+}
+
+#exp{
+    color: black;
+    margin-top: 10px;  
+}
+#exp > img{
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+}
+
+#contact{
+    color: black;
+    margin-top: 10px;  
+    /* margin-left: 20px; */
+}
+#contact > img{
+    float: right;
+    width: 50%;
+}
+
+.data{
+    padding-top: 10%;
+    margin: 20px 20px;
+}
+
+.social{
+    width: 100%;
+    padding-top: 0%;
+}
+
+#scrollToTopBtn{
+    width: 80px;
+    height: 80px;
+    float: right;
+    border: 1px red solid;
+    border-radius: 20px;
+}
+#scrollToTopBtn:hover{
+    background-color: rgb(191, 33, 33);
+    transition: 0.5s ease-in-out;
+}
+
+
+footer{
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
