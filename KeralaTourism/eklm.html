@@ -1,21 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ernakulam</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>Ernakulam</h1>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="home.html" class="text-white">Home</a></li>
+                            <li><a href="district.html" class="text-white">Districts</a></li>
+                            <li><a href="https://www.keralatourism.org/" class="text-white">Kerala Tourism Official</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="./images/logo.png" alt="" style="width: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Ernakulam</h1>
+                    <p class="lead text-muted">Widely known as the ‘Queen of Arabian Sea’, Kochi/Cochin is a paradise
+                        for travelers who come in search of wonders. Kochi is one among the top rated international
+                        travel destinations where tourists can closely experience the glimpses of pre-historic, historic
+                        and modern era. Kochi is in fact the heart of God's own country – Kerala. It is the financial
+                        capital of the city with booming IT industry and various other trading endeavors as it is one of
+                        the chief port cities in the country.</p>
+                    <p>
+                        <a href="district.html" class="btn btn-primary my-2">Districts</a>
+                        <a href="home.html" class="btn btn-secondary my-2">Home</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/eklm1.jpg" alt="image" class="bd-placeholder-img card-img-top"
+                                width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <div class="card text-center mb-3" style="width: 18rem;"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Chinese Fishing Nets</h5>
+                                <p class="card-text">The Chinese fishing nets at Fort Kochi is one of the unique and
+                                    popular tourist attraction. This is also a proof of Chinese influence in Kerala. It
+                                    is believed that these nets were introduced by traders from the court of the Chinese
+                                    ruler Kublai Khan between 1350 and 1450.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/eklm3.jpg" alt="image" class="bd-placeholder-img card-img-top"
+                                width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <div class="card text-center mb-3" style="width: 18rem;"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Fort Kochi</h5>
+                                <p class="card-text">The art capital of Kerala, Fort Kochi is just a small part of the
+                                    larger area of Cochin. This place is known among thriving artists the world over for
+                                    its Kochi-Muziris Biennale. The contemporary art festival which begins in December
+                                    is the largest of its kind in
+                                    all of Asia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/eklm2.jpg" alt="image" class="bd-placeholder-img card-img-top"
+                                width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <div class="card text-center mb-3" style="width: 18rem;"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mattancherry Palace</h5>
+                                <p class="card-text">Mattancherry Palace is one of the glorious monuments in the
+                                    beautiful city Kochi. The palace stands as a replica of the majestic pre-colonial
+                                    and colonial era of Kochi and Kerala. Mattancherry Palace is also known as the Dutch Palace, owing to
+                                    the renovations done by Dutch rulers after they took over the kingdom.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">© 2023 Copyright @ tintukjkohn</p>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

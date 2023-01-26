@@ -1,21 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alappuzha</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>Alappuzha</h1>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="home.html" class="text-white">Home</a></li>
+                            <li><a href="district.html" class="text-white">Districts</a></li>
+                            <li><a href="https://www.keralatourism.org/" class="text-white">Kerala Tourism Official</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+            viewBox="0 0 24 24">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+          </svg> -->
+                    <!-- <strong>Album</strong> -->
+                    <img src="./images/logo.png" alt="" style="width: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Alappuzha</h1>
+                    <p class="lead text-muted">Alleppey vacations promise to offer loads of fun, beauty and adventure.
+                        If you want to take a break from the stressful daily life travel to Alleppey and make your
+                        holidays the most memorable one. Alleppey also known as Alappuzha is the city of canals and
+                        lagoons. Alleppey is the hub of backwater tourism. This huge backwaters of canals, lagoons and
+                        lakes provide the lifeline of Alleppey.</p>
+                    <p>
+                        <a href="district.html" class="btn btn-primary my-2">Districts</a>
+                        <a href="home.html" class="btn btn-secondary my-2">Home</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/alpy2.jpg" alt="image" class="bd-placeholder-img card-img-top"
+                                width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <div class="card text-center mb-3" style="width: 18rem;"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Alappuzha Beach</h5>
+                                <p class="card-text">The exotic Alappuzha beach is one of the major attraction. The
+                                    beach is a famous picnic spot with a children’s park and boating facilities. The old
+                                    lighthouse and 140 year old pier which extends into the sea is an amazing view.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/alpy3.jpg" alt="image" class="bd-placeholder-img card-img-top"
+                                width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <div class="card text-center mb-3" style="width: 18rem;"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">The Alleppey Backwaters</h5>
+                                <p class="card-text">The most attractive feature of Alappuzha is the backwater. A
+                                    backwater cruise on
+                                    the Punnamada lake offers you the wonderful sight of scenic islands, villages dotted
+                                    with coconut groves and paddy fields, Chinese fishing nets and toddy tapper at work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/alpy1.jpg" alt="image" class="bd-placeholder-img card-img-top"
+                                width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <div class="card text-center mb-3" style="width: 18rem;"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mullackal</h5>
+                                <p class="card-text">Mullackal is a Konkani Brahmin settlement built around Alappuzha
+                                    Town. It is in here the Bhagavathy Temple is located. The main deity of the temple
+                                    is Goddess Bhagavathi. The Konkani Brahmin resides here are specialises in making
+                                    sweets.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">© 2023 Copyright @ tintukjkohn</p>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
