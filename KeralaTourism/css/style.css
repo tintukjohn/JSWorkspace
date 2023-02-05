@@ -11,4 +11,14 @@
     height: 150px;
 }
 
+span{
+    color: red;
+    /* phone.style.border="2px solid red"
+    phone_error.style.color="red" */
+}
+
+ span > span {
+    color: green;
+} 
+
 
