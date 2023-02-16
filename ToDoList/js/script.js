@@ -15,11 +15,9 @@ function ajax() {
     try {
         let request = new XMLHttpRequest();
         request.open("GET", 'https://jsonplaceholder.typicode.com/todos', true);
-
         request.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 let response = JSON.parse(this.responseText)
-
                 for (let i = 0; i < response.length; i++) {
                     let li = document.createElement("li");
                     document.getElementById("parent").append(li);
@@ -71,9 +69,8 @@ function generateColor() {
     let color = '#';
     let digits = '0123456789ABCDEF';
     for (let i = 0; i < 6; i++) {
-      let randomDigit = Math.floor(Math.random() * 16);
-      color += digits[randomDigit];
+        let randomDigit = Math.floor(Math.random() * 16);
+        color += digits[randomDigit];
     }
     return color;
-  }
-  
+}

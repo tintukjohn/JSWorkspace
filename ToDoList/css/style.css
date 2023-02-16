@@ -44,3 +44,7 @@ body {
 li:hover {
   transform: scale(1.01)
 }
+
+h1 {
+  text-align: center;
+}
