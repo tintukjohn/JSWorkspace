@@ -23,17 +23,13 @@ function ajax() {
                 for (let i = 0; i < response.length; i++) {
                     let li = document.createElement("li");
                     document.getElementById("parent").append(li);
-                    li.innerHTML = `<input type="checkbox" name="checkbox" id="cb${i}"> <h5 style='color:red'>User ${response[i].userId} :  ${response[i].title}</h5>`;
-
-                    let id = "cb" + i;
-                    let input = document.getElementById(id);
+                    li.innerHTML = `<input type="checkbox" name="checkbox" id="cb${i}"> <h5 style='color:${generateColor()}'>User ${response[i].userId} :  ${response[i].title}</h5>`;
+                    let input = document.getElementById("cb" + i);
                     if (response[i].completed) {
                         input.checked = true;
                         input.disabled = true;
                     }
                     input.addEventListener("click", handleSubmit);
-
-                    li.style.backgroundColor = "black";
                 }
             }
         }
@@ -70,3 +66,14 @@ async function handleSubmit() {
             console.log('e');
         })
 }
+
+function generateColor() {
+    let color = '#';
+    let digits = '0123456789ABCDEF';
+    for (let i = 0; i < 6; i++) {
+      let randomDigit = Math.floor(Math.random() * 16);
+      color += digits[randomDigit];
+    }
+    return color;
+  }
+  
